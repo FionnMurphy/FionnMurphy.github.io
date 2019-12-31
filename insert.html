@@ -1,0 +1,98 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example Insert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/insert.css" />
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+    
+</head>
+<body style="margin: 0">
+    <div class="TY_Panel">
+        <div class="TY_Side_Panel TY_In_Line">
+            <img class="TY_Ear_Mark" src="assets/images/Ear_Mark.png" alt="triangle" width="1000px" height="1000px"/>
+            <div class="TY_Logo_Container">
+        
+                <img class="TY_Left_Swirl TY_Swirl TY_All" src="assets/images/Left-Swirl-Logo.png" alt="l_Swirl" width="512px" height="534px">
+                <div class="TY_Logo_Text TY_All">
+                    360<br/>
+                    <span class="TY_Anim_Logo_Text">Full Scope</span>
+                </div>
+                <img class="TY_Right_Swirl TY_Swirl TY_All" src="assets/images/Right-Swirl-Logo.png" alt="r_Swirl" width="512px" height="534px">
+            </div>
+            <div id="Picking_Buttons" class="TY_Picking_Buttons">
+                <input id="Alma" class="TY_button" onclick="Load_Pic1()" checked="checked" type="radio" name="selector"/>
+                <label class="TY_Label" for="Alma">Example</label>
+                <input id="Kitchen" class="TY_button" onclick="Load_Pic2()" type="radio" name="selector"/>
+                <label class="TY_Label" for="Kitchen">Kitchen</label>
+                <input id="Other" class="TY_button" onclick="Load_Pic3()" type="radio" name="selector"/>
+                <label class="TY_Label" for="Other">Other</label>
+            </div>
+            <div class="TY_Text_Box">
+                <span class="TY_Question">Would you like a 360 experience on your website?</span><br/>
+                <span class="TY_Underline">Contact Us:</span><br/>
+                fullscope36<span class="TY_Helvetica">@</span>gmail.com
+            </div>
+        </div>
+        <div class="TY_View_Panel TY_In_Line">
+            <div id="panorama">
+        </div>
+            <script>
+            var viewer = pannellum.viewer('panorama', 
+            {
+                "default": {
+                    "firstScene": "Test",
+                    "sceneFadeDuration": 1000
+                },
+
+                "scenes": 
+                {
+                    "Test": 
+                    {
+	                    "type": "equirectangular",
+		                "panorama": "assets/images/Practice_Image.JPG",
+                        "autoLoad": true,
+                        "hotSpots": [
+                            {
+                                "pitch": 0,
+                                "yaw": 0,
+                                "type": "scene",
+                                "text": "Kitchen",
+                                "sceneId": "Test2"
+                            }
+                        ]
+	    	        },
+                    "Test2": 
+                    {
+	                    "type": "equirectangular",
+		                "panorama": "assets/images/Stock.jpeg",
+                        "autoLoad": true,
+	    	        },
+                    "Test3":
+                    {
+                        "type": "equirectangular",
+                        "panorama": "assets/images/",
+                        "autoLoad": true,
+                    }
+                }
+            });
+            
+            function Load_Pic1(){
+                viewer.loadScene("Test")
+            }
+            function Load_Pic2(){
+                viewer.loadScene("Test2")
+            }
+            function Load_Pic3(){
+                viewer.loadScene("Test3")
+            }
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

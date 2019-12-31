@@ -1,0 +1,225 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="view" content="width=device-width, initial-scale=1.0">
+    <title>360 Full Scope</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/360_No_Scope_Favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+</head>
+<body>
+<header>
+    <video id="vid" class="TY_video_player1" width="45%" preload>
+        <source src="/assets/images/360 Logo Animation Website Grey.webm" type="video/webm"/>
+        <source src="/assets/images/360 Logo Animation Website Grey.mp4" type="video/MP4"/>
+    </video>
+    <img class="Mobile_logo" src="/assets/images/360_Full_Scope_Logo.png"/>
+
+    <div class="Navbar">
+        <label class="Menu_Icon" for="Toggle">&#9776</label>
+        <input type="checkbox" id="Toggle"/>
+        <nav class="menu">
+            <a class="menu_Item_Home" href="#">360 Full Scope</a>
+            <a class="menu_Item" href="#About_Panel">About</a>
+            <a class="menu_Item" href="#Pricing_Panel"><span class="Orange">Pricing</span></a>
+            <a class="menu_Item" href="#Past_Work_Panel">Past Work</a>
+            <a class="menu_Item" href="#Contact_Panel">Contact Us</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="Home_Panel">
+        <div class="News_Panel">
+            <div class="Subheading TY_Underline">
+                News
+            </div>
+            <div id="text" class="News">
+                9/11/2018<br/>
+                This webpage was made
+            </div> 
+        </div>
+    </div>
+    <div id="About_Panel" class="About_Panel">
+        <div class="Subheading">About Us</div>
+        <div class="Left_Panel">
+            <img src="assets/images/Fionn&Eoghan_Pic.jpg" width="950px" height="560px"/>
+            <div class="Right_Panel">
+                We are two students from Borris Vocational School, Co.Carlow, Ireland who set up this 
+                company for our TY Mini-Company module.<br/><br/>
+                We are 360 Full Scope and we take 360 
+                degree images for businesses that help show off their services/facilities in an 
+                engaging and intuitive way.<br/><br/>
+                Once they have been made we then insert them onto their 
+                website in the format shown below.
+            </div>
+        </div>
+    </div>
+
+    <div class="TY_Panel">
+        <div class="TY_Side_Panel TY_In_Line">
+            <img class="TY_Ear_Mark" src="/assets/images/Ear_Mark.png" alt="triangle" width="1000px" height="1000px"/>
+            <video id="vid1" class="TY_video_player" width="100%" preload>
+                <source src="/assets/images/360 Logo Animation White.webm" type="video/webm"/>
+                <source src="/assets/images/360 Logo Animation White.mp4" type="video/MP4"/></video>
+                <img class="Mobile_logo" src="/assets/images/360_Full_Scope_Logo.png"/>
+                <div id="Picking_Buttons" class="TY_Picking_Buttons">
+                    <input id="Hall" class="TY_button" onclick="Load_Pic1()" checked="checked" type="radio" name="selector"/>
+                    <label class="TY_Label" for="Hall">Entrance Hall</label>
+                    <br/>
+                    <input id="Sitting Room" class="TY_button" onclick="Load_Pic2()" type="radio" name="selector"/>
+                    <label class="TY_Label" for="Sitting Room">Library</label>
+                    <br/>
+                    <input id="Library" class="TY_button" onclick="Load_Pic3()" type="radio" name="selector"/>
+                    <label class="TY_Label" for="Library">Sitting Room</label>
+                </div>
+                <div class="TY_Text_Box">
+                    <span class="TY_Question">Would you like a 360 experience on your website?</span>
+                    <br/>
+                    <span class="TY_Underline">Contact Us:</span>
+                    <br/>
+                     fullscope36
+                     <span class="TY_Helvetica">@</span>
+                     gmail.com</div>
+                </div>
+                <div class="TY_View_Panel TY_In_Line">
+                    <div id="panorama">
+                    </div>
+                </div>
+            </div>
+            <script>
+            var viewer = pannellum.viewer('panorama', 
+            {
+                "default": {
+                    "firstScene": "EG1",
+                    "sceneFadeDuration": 1000
+                },
+
+                "scenes": 
+                {
+                    "EG1": 
+                    {
+	                    "type": "equirectangular",
+		                "panorama": "assets/images/Example1.JPG",
+                        "autoLoad": true,
+                        "yaw": 25,
+                        "hotSpots": [
+                            {
+                                "pitch": -5,
+                                "yaw": -60,
+                                "type": "scene",
+                                "text": "Library",
+                                "sceneId": "EG2"
+                            },
+                            {
+                                "pitch": -5,
+                                "yaw": 120,
+                                "type": "scene",
+                                "text": "Sitting Room",
+                                "sceneId": "EG3"
+                            }
+                        ]
+	    	        },
+                    "EG2": 
+                    {
+	                    "type": "equirectangular",
+		                "panorama": "assets/images/Example2.JPG",
+                        "autoLoad": true,
+                        "yaw": 0,
+                        "hotSpots": [
+                            {
+                                "pitch": -5,
+                                "yaw": 40,
+                                "type": "scene",
+                                "text": "Entrance Hall",
+                                "sceneId": "EG1"
+                            }
+                        ]
+	    	        },
+                    "EG3": 
+                    {
+	                    "type": "equirectangular",
+		                "panorama": "assets/images/Example3.JPG",
+                        "autoLoad": true,
+                        "yaw": -25,
+                        "hotSpots": [
+                            {
+                                "pitch": -5,
+                                "yaw": 20,
+                                "type": "scene",
+                                "text": "Entrance Hall",
+                                "sceneId": "EG1"
+                            }
+                        ]
+	    	        }
+                }
+            });
+            
+            function Load_Pic1(){
+                viewer.loadScene("EG1")
+            }
+            function Load_Pic2(){
+                viewer.loadScene("EG2")
+            }
+            function Load_Pic3(){
+                viewer.loadScene("EG3")
+            }
+
+            </script>
+        </div>
+    </div>
+
+    <div id="Pricing_Panel" class="Pricing_Panel">
+        <div class="Orange Subheading">
+            Pricing
+        </div>
+        <div class="Price_Panel">
+            <table class="Price_Table">
+                <tr>
+                    <td>First 2 Images</td>
+                    <td>€50</td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>€10</td>
+                </tr>
+                <tr>
+                    <td>Travel Costs</td>
+                    <td>Contact for details</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="Past_Work_Panel" class="Past_Work_Panel">
+        <div class="Subheading">
+            Some people we've already worked with are:
+        </div>
+        <div class="Past_Work_Wrapper">
+            <a href="https://lorum.com/">
+                <div class="button">
+                    Lorum Old Rectory
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="Contact_Panel" class="Contact_Panel Subheading">
+        For enquiries or purchases contact us:<br/>
+        fullscope36@gmail.com
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/scripts/video_Hover.js"></script>
+    <script>
+        $(window).load(function(){
+        $(".Navbar").sticky({ topSpacing: 0 });
+    });
+    </script>
+</footer>
+</body>
+</html>
