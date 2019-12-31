@@ -76,6 +76,9 @@ a:active{
     .head{
         font-size: 20vw;
     }
+    .description{
+        font-size: 5vw;
+    }
     a{
         font-size: 6vw;
         width: 60%;
