@@ -23,7 +23,7 @@ p{
 }
 
 .s-head{
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 20%;
 }
 
@@ -31,6 +31,15 @@ p{
     font-size: 5em;
     font-family: 'Tangerine', cursive;
     text-shadow: 4px 4px 4px rgb(51, 51, 51);
+    margin-bottom: 40px;
+}
+
+.description{
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    margin-left: 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.384);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
 }
 
 a{
@@ -58,4 +67,17 @@ a:hover{
 a:active{
     background-color: black;
     color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    .s-head{
+        font-size: 4vw;
+    }
+    .head{
+        font-size: 20vw;
+    }
+    a{
+        font-size: 6vw;
+        width: 60%;
+    }
 }
