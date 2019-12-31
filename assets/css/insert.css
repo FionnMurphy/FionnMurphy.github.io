@@ -1,0 +1,201 @@
+.TY_Panel{
+    height: 70%;
+    width: 100%;
+}
+#panorama {
+    width: 82%;
+    height: 100%;
+    margin: auto;
+}
+.TY_Logo_Container{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+}
+.TY_Helvetica{
+    font-family: helvetica;
+}
+.TY_Swirl{
+    height: auto;
+    width: 20%;
+}
+.TY_Left_Swirl{
+    position: absolute;
+    left: 24%;
+    animation: R_L_Opening_Brackets 1s ease-in-out 0s 1;
+}
+.TY_Right_Swirl{
+    position: absolute;
+    right: 24%;
+    animation: R_R_Opening_Brackets 1s ease-in-out 0s 1;
+}
+.TY_Logo_Text{
+    position: absolute;
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5vw;
+    color: rgb(58, 58, 58);
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.TY_Anim_Logo_Text{
+    opacity: 0;
+    animation: R_Text_Appear .5s ease-out 0s 1;
+}
+
+.TY_Logo_Container:hover .TY_Left_Swirl{
+    animation: L_Opening_Brackets 1s ease-in-out 0.2s 1 alternate forwards;
+}
+.TY_Logo_Container:hover .TY_Right_Swirl{
+    animation: R_Opening_Brackets 1s ease-in-out 0.2s 1 alternate forwards;
+}
+.TY_Logo_Container:hover .TY_Anim_Logo_Text{
+    animation: Text_Appear .5s ease-in .8s 1 alternate forwards;
+}
+
+.TY_All{
+    display: inline-block;
+}
+
+@keyframes L_Opening_Brackets{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes R_L_Opening_Brackets{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes R_Opening_Brackets{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(80%);
+    }
+}
+@keyframes R_R_Opening_Brackets{
+    from{
+        transform: translateX(80%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes Text_Appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes R_Text_Appear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.TY_Divider{
+    width: 100%;
+    height: 100px;
+}
+.TY_Null{
+    width: 100%;
+    Height: 50%;
+    background-color: darkslategray;
+}
+
+.TY_Side_Panel{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(243, 243, 243);
+}
+.TY_View_Panel{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: rgb(97, 97, 97);
+    right: 0;
+}
+.TY_In_Line{
+    display: inline-block;
+}
+
+.TY_Ear_Mark{
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+.TY_Text_Box{
+    position: absolute;
+    width: 100%;
+    font-size: 1.4vw;
+    background-color: rgba(0, 0, 0, 0.575);
+    bottom: 0px;
+    font-family: 'Audiowide', cursive;
+}
+.TY_Question{
+    font-size: 1vw;
+}
+.TY_Underline{   
+    text-decoration: underline;
+}
+
+input{
+    visibility: hidden;
+    width: 0;
+}
+
+.TY_Picking_Buttons{
+    padding-top: 22%;
+}
+
+.TY_Picking_Buttons label{
+    font-family: 'Audiowide', cursive;
+    cursor: pointer;
+}
+
+.TY_Picking_Buttons label:hover{
+    font-weight: bolder;
+}
+
+.TY_Picking_Buttons input:checked + label{
+    color: #b30000;
+}
+
+.TY_label{
+    position: relative;
+    margin-left: 30%;
+    display: block;
+    font-size: 1vw;
+    line-height: 40%;
+}
+
+
+@media only screen and (max-width: 1000px){
+    #panorama{
+        width: 100%;
+        height: 60%;
+        margin-top: 20%;
+    }
+    .TY_label{
+        font-size: 3vw;
+    }
+    .pnlm-container{
+        margin: 0;
+        width: 100%;
+    }
+}
