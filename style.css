@@ -43,6 +43,7 @@ p{
 }
 
 a{
+    overflow-wrap: break-word;
     margin-top: 40px;
     margin-left: 50%;
     transform: translateX(-50%);
