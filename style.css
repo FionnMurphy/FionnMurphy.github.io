@@ -78,14 +78,13 @@ a:active{
         font-size: 20vw;
     }
     .description{
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
     a{
-        font-size: 6vw;
-        width: 60%;
+        font-size: 4vw;
         transition: font-size .3s;
     }
     a:hover{
-        font-size: 7vw;
+        font-size: 5vw;
     }
 }
