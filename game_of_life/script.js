@@ -43,6 +43,7 @@ function create_selection_board(){
 function create_numbers(){
     start_b_m.style.display = "none";
     numbers = [];
+    get_inputs1();
     for (index = 0; index < board_size; index++){
         var box = document.getElementById('cell'+index);
         if (box.checked == true){
@@ -74,6 +75,7 @@ function m_boards(){
     }
     tbl.setAttribute("id","Starter");
     canvas_m.appendChild(tbl);
+    print('no. of gens '+gens,canvas_m);
     for (var i = 1; i <= gens; i++){
         print('Generation '+i,canvas_m);
         check_numbers(canvas_m);
@@ -94,8 +96,15 @@ function print(text,area){
 function get_inputs(){
     chance = Math.ceil(document.getElementById('c').value);
     width = Math.ceil(document.getElementById('bs').value);
+    gens = document.getElementById('g').value;
     board_size = width*width;
     numbers = [];
+    alive = document.getElementById('a').value;
+    dead = document.getElementById('d').value;
+}
+
+function get_inputs1(){
+    gens = document.getElementById('g').value;
     alive = document.getElementById('a').value;
     dead = document.getElementById('d').value;
 }
@@ -300,5 +309,3 @@ function w (index){
         num += 1;
     }
 }
-
-create_selection_board()
