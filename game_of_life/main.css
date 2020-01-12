@@ -48,6 +48,10 @@ input[type='radio']{
     input[type='checkbox']{
         transform: scale(1.5);
     }
+    button{
+        width: 50%;
+        height: 50px;
+    }
 }
 .random, .manual{
     width: auto;
