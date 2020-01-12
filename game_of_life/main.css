@@ -15,8 +15,11 @@ body{
 table{
     text-align: center;
     background-color: coral;
-    line-height: 15px;
-    margin: 20px;
+    margin: 40px;
+}
+td{
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .input_box{
     background-color: rgb(255, 203, 166);
