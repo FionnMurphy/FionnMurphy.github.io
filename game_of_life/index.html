@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>The Game Of Life</title>
         <link rel="stylesheet" type="text/css" href="main.css"/>
     </head>
     <body>
+        <div class="title">
+            The Game Of Life
+        </div>
         <div class="input_box">
             <label for="bs">Width/Height</label>
             <input id="bs" type="number" name="board_size" value="3" placeholder="The width and height of the board e.g. '10'.">
@@ -17,14 +21,25 @@
             <label for="g">Generations</label>
             <input id="g" type="number" name="gens" value="3" placeholder="How generations will be calculated e.g. '5'.">
         </div>
+        <div class="description">
+            <p class="description_text">
+                The game of life isn't actually a game. It's a simulation! A board is covered with "cells" that can be "alive" or "dead". Whether or not they come to life depends on how many living cells surround them.
+                <br/>
+                <ul>
+                    <li>2 or less living neighbours: the cell will die</li>
+                    <li>3 living neighbours: the cell will come to life</li>
+                    <li>4 or more living neighbours: the cell will die</li>
+                </ul>
+            </p>
+        </div>
         <br/>
-        <input type="radio" name="is_manual" id="r" class="random" checked/>
-        <label for="is_random">Random</label>
-        <br/>
-        <input type="radio" name="is_manual" id="m" class="manual"/>
+        <input type="radio" name="is_manual" id="m" class="manual" checked/>
         <label for="is_manual">Manual</label>
+        <br/>
+        <input type="radio" name="is_manual" id="r" class="random"/>
+        <label for="is_random">Random</label>
         <div class="m_group">
-            <button type="button" onclick="create_selection_board()">Update inputs</button>
+            <button type="button" onclick="create_selection_board()">Generate starter board</button>
             <br/>
             <button type="button" id="start_button_m" class="start_button_m" onclick="create_numbers()">Start</button>
             <div id="canvas_m" class="choosing_area">

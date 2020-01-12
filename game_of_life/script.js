@@ -300,3 +300,5 @@ function w (index){
         num += 1;
     }
 }
+
+create_selection_board()

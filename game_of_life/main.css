@@ -5,6 +5,13 @@ body{
     background-color: blanchedalmond;
     font-size: 26px;
 }
+.title{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 table{
     text-align: center;
     background-color: coral;
@@ -15,6 +22,11 @@ table{
     background-color: rgb(255, 203, 166);
     width: 48%;
     display: inline-block;
+}
+.description{
+    font-size: 16px;
+    display: inline-block;
+    width: 40%;
 }
 .input_box1{
     background-color: rgb(202, 255, 166);
