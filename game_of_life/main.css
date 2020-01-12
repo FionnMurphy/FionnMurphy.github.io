@@ -1,0 +1,53 @@
+html{
+    user-select: none;
+}
+body{
+    background-color: blanchedalmond;
+    font-size: 26px;
+}
+table{
+    text-align: center;
+    background-color: coral;
+    line-height: 15px;
+    margin: 20px;
+}
+.input_box{
+    background-color: rgb(255, 203, 166);
+    width: 48%;
+    display: inline-block;
+}
+.input_box1{
+    background-color: rgb(202, 255, 166);
+    width: 48%;
+    display: absolute;
+    top: 0px;
+    right: 0px;
+}
+input{
+    margin-bottom: 20px;
+}
+.random, .manual{
+    width: auto;
+}
+.c_group{
+    display: none;
+}
+.m_group{
+    display: none;
+}
+.random:checked ~ .c_group{
+    display: block;
+}
+.manual:checked ~ .m_group{
+    display: block;
+}
+.chance{
+    width: 10%;
+    display: inline-block;
+}
+.percent{
+    display: inline;
+}
+.start_button_c, .start_button_m{
+    display: none;
+}

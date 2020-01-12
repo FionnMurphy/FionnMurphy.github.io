@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+    </head>
+    <body>
+        <div class="input_box">
+            <label for="bs">Width/Height</label>
+            <input id="bs" type="number" name="board_size" value="3" placeholder="The width and height of the board e.g. '10'.">
+            <br/>
+            <label for="a">Alive</label>
+            <input id="a" type="text" name="alive" value="O" placeholder="How living cells will be displayed e.g. 'O'.">
+            <br/>
+            <label for="d">Dead</label>
+            <input id="d" type="text" name="dead" value="-" placeholder="How dead cells will be displayed e.g. '-'.">
+            <br/>
+            <label for="g">Generations</label>
+            <input id="g" type="number" name="gens" value="3" placeholder="How generations will be calculated e.g. '5'.">
+        </div>
+        <br/>
+        <input type="radio" name="is_manual" id="r" class="random" checked/>
+        <label for="is_random">Random</label>
+        <br/>
+        <input type="radio" name="is_manual" id="m" class="manual"/>
+        <label for="is_manual">Manual</label>
+        <div class="m_group">
+            <button type="button" onclick="create_selection_board()">Update inputs</button>
+            <br/>
+            <button type="button" id="start_button_m" class="start_button_m" onclick="create_numbers()">Start</button>
+            <div id="canvas_m" class="choosing_area">
+            </div>
+        </div>
+        <div class="c_group">
+            <label for="bs">Chance of life</label>
+            <br/>
+            <input class="chance" id="c" type="number" name="chance_life" value="40" placeholder="The chance of a cell starting off being alive e.g. '20'.">
+            <div class="percent">%</div>
+            <br/>
+            <button type="button" id="gen_button_c" class="gen_button_c" onclick="generate_sample()">Generate random starter board</button>
+            <br/>
+            <button type="button" id="start_button_c" class="start_button_c" onclick="generate_boards()">Start</button>
+            <div id="canvas">    
+            </div>
+        </div>
+        <br/>
+    </body>
+    <footer id="footer">
+        <script src="script.js"></script>
+    </footer>
+</html>
