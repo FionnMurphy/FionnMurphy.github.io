@@ -41,6 +41,9 @@ td{
 input{
     margin-bottom: 20px;
 }
+input[type='radio']{
+    transform: scale(3);
+}
 @media screen and (max-width: 1500px){
     input[type='checkbox']{
         transform: scale(2);
