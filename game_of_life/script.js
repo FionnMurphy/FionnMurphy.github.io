@@ -154,7 +154,6 @@ function draw_board(area){
 function generate_boards(){
     start_b_c.style.display = "none";
     current_gen = 0;
-    clear(canvas);
     for (var i = 1; i <= gens; i++){
         print('Generation '+i,canvas);
         check_numbers(canvas);
