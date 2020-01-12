@@ -42,11 +42,11 @@ input{
     margin-bottom: 20px;
 }
 input[type='radio']{
-    transform: scale(3);
+    transform: scale(2);
 }
 @media screen and (max-width: 1500px){
     input[type='checkbox']{
-        transform: scale(2);
+        transform: scale(1.5);
     }
 }
 .random, .manual{
