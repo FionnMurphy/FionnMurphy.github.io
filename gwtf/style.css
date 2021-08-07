@@ -101,3 +101,7 @@ li{
     height: 100%;
     border-radius: 50px;
 }
+.icon:active .icon_text{
+    height: 100%;
+    border-radius: 50px;
+}
