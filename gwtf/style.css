@@ -33,6 +33,7 @@ ul{
 li{
     margin: 0 10px 0 10px;
     display: inline-block;
+    user-select: none;
 }
 
 .main{
@@ -77,13 +78,19 @@ li{
     text-align: center;
     height: 40%;
     border-radius: 0px 0px 50px 50px;
+    overflow-y: hidden;
     transition: height 1s, border-radius 1s;
 }
 
+span{
+    text-decoration: underline;
+}
+
 .small_text{
+    font-style: italic;
     font-size: .6em;
     line-height: 1.4em;
-    margin: 2em;
+    margin: 0.5em 3em 0em 3em;
 }
 
 @media screen and (max-width: 1000px){
@@ -101,7 +108,7 @@ li{
     height: 100%;
     border-radius: 50px;
 }
-.icon:active .icon_text{
-    height: 100%;
-    border-radius: 50px;
+
+li:hover{
+    background-color: rgba(0, 0, 0, 0.24);
 }
