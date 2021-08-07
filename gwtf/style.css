@@ -34,7 +34,7 @@ li{
     margin: auto;
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 1000px){
     .icon_container{
         width: 316px;
     }
