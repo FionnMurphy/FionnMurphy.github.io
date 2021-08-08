@@ -1,6 +1,6 @@
 html{
     background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -84,18 +84,20 @@ li{
     height: 40%;
     border-radius: 0px 0px 50px 50px;
     overflow-y: hidden;
-    transition: height 1s, border-radius 1s;
-}
-
-span{
-    text-decoration: underline;
 }
 
 .small_text{
-    font-style: italic;
     font-size: .6em;
     line-height: 1.4em;
     margin: 0.5em 3em 0em 3em;
+    font-weight: 300;
+}
+
+.icon_link{
+    color: white;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1%;
 }
 
 @media screen and (max-width: 1000px){
@@ -108,18 +110,13 @@ span{
         height: 100%;
     }
     .icon_text{
-        font-size: 3em;
+        font-size: 2.8em;
         margin: 0px;
     }
     .small_text{
-        font-size: .8em;
-        margin: .5em 50px 0px 50px;
+        font-size: .55em;
+        margin: .5em 0px 0px 0px;
     }
-}
-
-.icon:hover .icon_text{
-    height: 100%;
-    border-radius: 50px;
 }
 
 li:hover{
