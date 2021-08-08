@@ -103,10 +103,12 @@ span{
         height: 100%;
     }
     .icon_text{
-        font-size: 4em;
+        font-size: 3em;
+        margin: 0px;
     }
     .small_text{
-        font-size: .7em;
+        font-size: .8em;
+        margin: .5em 50px 0px 50px;
     }
 }
 
