@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Go With The Flow</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <script src="logic.js"></script>
+    </head>
+    <body>
+        <img src="images/Gwtf-Logo.png" class="banner">
+        
+        <div id="menuToggle">
+            <input type="checkbox" id="hamburger_menu"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li class="mobile_li"><a id="mobile_link" onclick="exit_menu();" href="#">About Us</a></li>
+                <li class="mobile_li"><a id="mobile_link" onclick="exit_menu();" href='#tt'>View Our Tours</a></li>
+                <li class="mobile_li"><a id="mobile_link" onclick="exit_menu();" href='#'>Contact Us</a></li>
+            </ul>
+          </div>
+            <nav>
+                <ul class="desktop_menu">
+                    <li class="desktop_li"><a href="#">About Us</a></li>
+                    <li class="desktop_li"><a href='#tt'>View Our Tours</a></li>
+                    <li class="desktop_li"><a href='#'>Contact Us</a></li>
+                </ul>
+            </nav>
+        <div class="main">
+            <div class="icon_area" id="tt">
+                <div class="heading">Our Tours</div>
+                <div class="icon">
+                    <img src="images/pic3.jpg" class="icon_image">
+                    <div class="icon_text">
+                    <span>Valley Of The Monks</span>
+                        <div class="small_text">
+                            A relaxing self-guided trip<br/><a href="https://gowiththeflow.ie/high-kings-trail/" target="_blank" class="icon_link">view in detail -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="images/pic2.jpg" class="icon_image">
+                    <div class="icon_text">
+                    <span>Spills And Thrills</span>
+                        <div class="small_text">
+                            A guided whitewater adventure<br/><a href="https://gowiththeflow.ie/splash-n-dash/" target="_blank" class="icon_link">view in detail -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="images/pic3.jpg" class="icon_image">
+                    <div class="icon_text">
+                    <span>Multi-day Canoe Hire</span>
+                        <div class="small_text">
+                            Hire canoes and spend 2-3 days paddling and camping along the river<br/><a href="https://gowiththeflow.ie/splash-n-dash/" target="_blank" class="icon_link">view in detail -></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
