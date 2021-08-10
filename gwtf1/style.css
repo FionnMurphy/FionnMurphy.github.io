@@ -23,6 +23,7 @@ body:before {
 body{
     margin: 0px;
     width: 100%;
+    overflow: auto;
 }
 
 .banner{
@@ -235,12 +236,13 @@ nav{
 
 #menu
 {
+    padding-top: 20%;
     opacity: 0%;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -249,13 +251,17 @@ nav{
     pointer-events: none;
     margin: 0px;
     border: 0px;
-    padding: 0px;
+    padding: 20% 0px;
 }
 
 #menuToggle input:checked ~ #menu
 {
   opacity: 100%;
   pointer-events: all;
+}
+
+#menuToggle input:checked ~ .main{
+    overflow: hidden;
 }
 
 .mobile_li{
