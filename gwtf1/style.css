@@ -150,11 +150,13 @@ nav{
   transition: color 0.1s;
 }
 
-#menuToggle a:hover
-{
-  color: rgb(37, 157, 255);
+#mobile_link:hover{
+    color: rgb(37, 157, 255);
 }
 
+#mobile_link:hover .mobile_li{
+    background-color: rgba(0, 0, 0, 0.055);    
+}
 
 #menuToggle input
 {
@@ -243,7 +245,7 @@ nav{
     top: 0px;
     width: 100vw;
     height: 80vh;
-    background: #ededed;
+    background-color: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -265,9 +267,12 @@ nav{
 }
 
 .mobile_li{
+    width: 100%;
+    font-size: 2em;
     text-align: center;
     vertical-align: middle;
-    margin: 40px;
+    padding: 40px 0px;
+    transition: background-color .2s;
 }
 
 @media screen and (max-width: 1000px){
