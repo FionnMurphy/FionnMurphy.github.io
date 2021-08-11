@@ -8,5 +8,5 @@ function toggle_menu(){
     }else{
         menu = true;
         document.body.style.overflow = 'hidden';
-    }
+    };
 };
