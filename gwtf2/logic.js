@@ -1,5 +1,5 @@
 var menu = false;
-
+  
 function toggle_menu(){
     if(menu){
         menu = false;
