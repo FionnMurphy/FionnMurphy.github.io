@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Go With The Flow</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="logic.js"></script>
+    </head>
+    <body>
+        <a href="gwtf.html"><img src="images/Gwtf-Logo.png" class="banner"/></a>
+        <div id="menuToggle">
+            <input type="checkbox" id="hamburger_menu" onclick="toggle_menu();"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a id="mobile_link" onclick="toggle_menu();" href="gwtf.html#our_tours"><li class="mobile_li">View Our Tours</li></a>
+                <a id="mobile_link" onclick="toggle_menu();" href="gwtf.html#about_us"><li class="mobile_li">About Us</li></a>
+                <a id="mobile_link" onclick="toggle_menu();" href="gwtf.html#contact_us"><li class="mobile_li">Contact Us</li></a>
+            </ul>
+          </div>
+            <nav>
+                <ul class="desktop_menu">
+                    <li class="desktop_li"><a href='gwtf.html#our_tours'>View Our Tours</a></li>
+                    <li class="desktop_li"><a href="gwtf.html#about_us">About Us</a></li>
+                    <li class="desktop_li"><a href='gwtf.html#contact_us'>Contact Us</a></li>
+                </ul>
+            </nav>
+        <div class="main">
+            <div class="splash_area splash_area_spills">
+                <img src="images/pic7.jpg" class="splash_pic"/>
+                <div class="splash_text">Spills and Thrills<br/><span class="splash_min_text">A guided whitewater kayak and canoe tour</span></div>
+            </div>
+            <div class="text_area" id="about_us">
+                <div class="heading">About This Tour</div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam voluptatibus nisi architecto inventore numquam iure libero. Eius, accusamus vel blanditiis accusantium culpa modi nam aperiam quod quasi voluptatibus quibusdam.
+            </div>
+            <a href="https://fareharbor.com/embeds/book/gowiththeflow/?full-items=yes&amp;flow=269502&amp;u=9f3021cc-4577-4bb0-be0d-8745d4603f92&amp;from-ssl=yes&amp;back=https://gowiththeflow.ie/" class="book_now_button">Book Now</a>
+        </div>
+    </body>
+</html>

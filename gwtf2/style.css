@@ -69,7 +69,22 @@ nav{
 .splash_area{
     position: relative;
     height: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.splash_area_main{
     background: url("images/pic5.jpg") center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.splash_area_spills{
+    background: url("images/pic7.jpg") center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
