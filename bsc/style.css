@@ -14,7 +14,10 @@ body:before {
     width: 100%;
     height: 100vh;
     z-index: -10;
-    background: #0f0925;
+    background: #00a0c9;
+    /*background-image: url(images/star.svg);
+    background-size: 5%;
+    background-position: center;*/
 }
 
 body{
@@ -37,7 +40,7 @@ nav{
     position: -webkit-fixed;
     position: fixed;
     top: 0px;
-    background-color: #ffffff;
+    background-color: #067490;
     z-index: 1;
  }
 
@@ -72,6 +75,7 @@ nav{
 }
 
 .desktop_li{
+    color: #cacaca;
     margin: 0 2px 0 2px;
     padding: 1em 2em 1em 2em;
     transition: color .1s, background-color .2s;
@@ -108,11 +112,14 @@ nav{
 
 .sub_heading{
     display: block;
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: .06em;
 }
 
 .desktop_li:hover, .mobile_li:hover{
-    background-color: #0f0925;
-    color: rgb(221, 94, 9);
+    background-color: #005369;
+    color: #ffffff;
 }
 
 #menuToggle
