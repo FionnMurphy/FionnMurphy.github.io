@@ -1,5 +1,5 @@
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     user-select: none;
     color: rgb(0, 0, 0);
 }
@@ -50,7 +50,7 @@ nav{
      transition: padding .1s;
  }
 .logo:hover{
-    padding: 0;
+    padding: 15px;
 }
  .pic{
      display: block;
@@ -77,7 +77,7 @@ nav{
 .desktop_li{
     color: #cacaca;
     margin: 0 2px 0 2px;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 20px;
     transition: color .1s, background-color .2s;
 }
 
@@ -89,7 +89,6 @@ nav{
     top: 0;
     right: 0;
     height: 120vh;
-    color: rgb(221, 94, 9);
     font-weight: 300;
     font-size: 3vw;
 }
@@ -110,16 +109,43 @@ nav{
     margin-bottom: 20px;
 }
 
+.main_pic{
+    width: 100%;
+}
+
 .sub_heading{
-    display: block;
-    color: white;
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    color: #ee8282;
     text-decoration: underline;
     text-decoration-thickness: .06em;
+    text-align: left;
+    margin-left: 5%;
 }
 
 .desktop_li:hover, .mobile_li:hover{
     background-color: #005369;
-    color: #ffffff;
+    color: #ea3b3b;
+}
+
+.container{
+    margin: auto;
+    margin-top: 100px;
+    background-color: #1094ac;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-right: 10%;
+    margin-left: 10%;
+    border-radius: 20px 0 0 20px;
+}
+
+.pic{
+    padding: 10px;
+    flex-grow: .5;
 }
 
 #menuToggle
@@ -133,7 +159,7 @@ nav{
   
   -webkit-user-select: none;
   user-select: none;
-  background-color: white;
+  background-color: #ffffff;
   padding: 14px;
   border-radius: 2px;
 }
@@ -173,7 +199,7 @@ nav{
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background-color: #067490;
   border-radius: 3px;
   
   z-index: 1;
@@ -203,7 +229,7 @@ nav{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #b3b3b3;
+  background: #ffffff;
 }
 
 /*
@@ -232,7 +258,7 @@ nav{
     top: 0px;
     width: 100vw;
     height: 80vh;
-    background-color: #ffffff;
+    background-color: #067490;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -312,5 +338,12 @@ iframe{
     }
     .heading{
         display: none;
+    }
+    .main_pic{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 40%;
+        z-index: -1;
     }
 }
