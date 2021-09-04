@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Kurale|Raleway|Tangerine&display=swap" rel="stylesheet">    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <title>Fionn's Amazing Website</title>
-</head>
-<body>
-    <p class="s-head">Hello, my name is</p>
-    <p class="head">Fionn Murphy</p>
-    <p class="description">
-        These are projects I've done since the tender age of 16.
-    </p>
-    <a href="360_fs/main.html" target="_">360 Full Scope</a>
-    <a href="game_of_life/index.html" target="_">Game Of Life</a>
-    <a href="gwtf2/gwtf.html" target="_">Go With The Flow</a>
-    <a href="bsc/bsc.html" target="_">Blackstairs Catering</a>
-</body>
+<html>
+    <head>
+        <title>Fionn Murphy</title>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="logic.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu_bar">
+                <li><a href="#" class="logo">Fionn Murphy</a></li>
+                <li><a href="#" class="menu_item">Contact</a></li>
+                <li><a href="#" class="menu_item">CV</a></li>
+                <li><a href="#projects" class="menu_item">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="card">
+                <span class="heading">Hello!</span><br/>
+                <span class="subheading">My name is</span><br/>
+                <span class="heading_1">Fionn Murphy</span><br/>
+                <span class="minor">Software Developer/Amateur Everything</span>
+            </div>
+            <h1 id="projects">Projects</h1>
+            <a href="game_of_life/index.html" target="_blank">
+                <div class="card projects_card">
+                    <img src="GOL.png" class="card_image left_image"/>
+                    <div class="card_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit nihil distinctio magni, ratione odio! Ratione aliquam nemo temporibus ex, quos ut voluptatibus impedit incidunt voluptates sint qui dolore porro!
+                    </div>
+                </div>
+            </a>
+            <a href="gwtf2/gwtf.html" target="_blank">
+                <div class="card projects_card">
+                    <div class="card_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit nihil distinctio magni, ratione odio! Ratione aliquam nemo temporibus ex, quos ut voluptatibus impedit incidunt voluptates sint qui dolore porro!
+                    </div>
+                    <img src="GWTF_PIC.png" class="card_image right_image"/>
+                </div>
+            </a>
+            <a href="bsc/bsc.html" target="_blank">
+                <div class="card projects_card">
+                    <img src="BSC_PIC.png" class="card_image left_image"/>
+                    <div class="card_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit nihil distinctio magni, ratione odio! Ratione aliquam nemo temporibus ex, quos ut voluptatibus impedit incidunt voluptates sint qui dolore porro!
+                    </div>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
+
