@@ -19,10 +19,10 @@
         </a>
         <nav id="nav_bar">
             <ul class="menu_bar">
-                <li><a href="#" class="logo menu_item" onclick="toggle_menu();">Fionn Murphy</a></li>
-                <li><a href="#Contact" class="ff menu_item" onclick="toggle_menu();">Contact</a></li>
-                <li><a href="#CV" class="ff menu_item" onclick="toggle_menu();">CV</a></li>
-                <li><a href="#Projects" class="ff menu_item" onclick="toggle_menu();">Projects</a></li>
+                <li id="logo"><a href="#" class="logo menu_item" onclick="toggle_menu();">Fionn Murphy</a></li>
+                <li><a href="#Contact" class="menu_item" onclick="toggle_menu();">Contact</a></li>
+                <li><a href="#CV" class="menu_item" onclick="toggle_menu();">CV</a></li>
+                <li><a href="#Projects" class="menu_item" onclick="toggle_menu();">Projects</a></li>
             </ul>
         </nav>
         <div class="main">
@@ -41,18 +41,24 @@
                         <p>
                             This program simulates a grid of cells that come to life or die depending on the state of their neighbouring cells.
                         </p>
+                        <p id="minor">
+                            Click to view
+                        </p>    
                     </div>
                 </div>
             </a>
             <a href="gwtf2/gwtf.html" target="_blank">
-                <div class="card projects_card">
+                <div class="card projects_card right_card">
+                    <img src="GWTF_PIC.png" class="card_image right_image"/>
                     <div class="card_text">
                         <h2>Go With The Flow -(IN PROGRESS)</h2>
                         <p>
                             This is a website I am currently creating for a kayaking and canoeing outdoor adventure business.
-                        </p>                    
+                        </p>
+                        <p id="minor">
+                            Click to view
+                        </p>                       
                     </div>
-                    <img src="GWTF_PIC.png" class="card_image right_image"/>
                 </div>
             </a>
             <a href="bsc/bsc.html" target="_blank">
@@ -83,8 +89,10 @@
     </body>
     <footer>
         <script>
-            var x = document.getElementById('nav_bar');
-            x.style.display = 'none';
+            if(window.innerWidth < 1000){  
+                var x = document.getElementById('nav_bar');
+                x.style.display = 'none';
+            };
         </script>
     </footer>
 </html>

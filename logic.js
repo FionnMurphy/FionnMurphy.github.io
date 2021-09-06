@@ -1,3 +1,15 @@
+window.addEventListener('resize', checksize);
+
+function checksize(){
+    var x = document.getElementById('nav_bar');
+    if(window.innerWidth > 1000){  
+      x.style.display = 'flex';
+    }else if(x.style.display == 'block'){
+      x.style.display = 'block';
+    }else{
+      x.style.display = 'none';
+    };
+};
 
 function toggle_menu(){
     var x = document.getElementById('nav_bar');
@@ -5,5 +17,5 @@ function toggle_menu(){
       x.style.display = 'block';
     }else{
       x.style.display = 'none';
-    }
+    };
 };
