@@ -166,6 +166,10 @@ h2{
     color: #7ec1f1;
 }
 
+.projects_card:hover #minor{
+    color: #7ec1f1;
+}
+
 .card_image{
     float: right;
     width: 40%;
