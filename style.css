@@ -30,7 +30,7 @@ li{
 
 a{
     text-decoration: none;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff00;
     transition: color .1s, border-bottom .2s;
 }
 
@@ -43,6 +43,13 @@ li a:active{
     color: #0071c3;
 }
 
+.menu_item{
+    float: right;
+    margin-left: 2rem;
+    color: #676161;
+    padding: 1rem 0 0 0;
+}
+
 .logo{
     float: left;
     font-weight: 600;
@@ -50,11 +57,37 @@ li a:active{
     padding: 1rem 0 0 0;
 }
 
-.menu_item{
-    float: right;
-    margin-left: 2rem;
-    color: #676161;
-    padding: 1rem 0 0 0;
+.menu_link{
+    width: 8%;
+    padding-bottom: min(8%, 50px);
+    max-width: 50px;
+    position: fixed;
+    display: none;
+    top: 20px;
+    right: 20px;
+    background-color: #e5e5e5a9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu_button{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.menu_icon{
+    width: 80%;
+    height: 12%;
+    position: relative;
+    background-color: #676161;
+    border-radius: 3px;
 }
 
 .main{
@@ -176,5 +209,32 @@ h2{
 }
 
 @media screen and (max-width: 1000px){
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 30%;
+    }
+    .menu_bar{
+        display: block;
+        padding-top: 10vh;
+    }
+    .menu_item{
+        padding: 2vh 0;
+        margin: 0;
+        float: none;
+        display: block;
+    }
+    .main{
+        margin-top: 5vh;
+    }
+    .menu_link{
+        display: block;
+    }
+
+    .menu_link:active .menu_icon{
+        background-color: #413e3e;
+    }
 
 }

@@ -10,12 +10,19 @@
         <script src="logic.js"></script>
     </head>
     <body>
-        <nav>
+        <a class="menu_link" onclick="toggle_menu();">
+            <div class="menu_button">
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </div>
+        </a>
+        <nav id="nav_bar">
             <ul class="menu_bar">
-                <li><a href="#" class="logo">Fionn Murphy</a></li>
-                <li><a href="#Contact" class="menu_item">Contact</a></li>
-                <li><a href="#CV" class="menu_item">CV</a></li>
-                <li><a href="#Projects" class="menu_item">Projects</a></li>
+                <li><a href="#" class="logo menu_item" onclick="toggle_menu();">Fionn Murphy</a></li>
+                <li><a href="#Contact" class="menu_item" onclick="toggle_menu();">Contact</a></li>
+                <li><a href="#CV" class="menu_item" onclick="toggle_menu();">CV</a></li>
+                <li><a href="#Projects" class="menu_item" onclick="toggle_menu();">Projects</a></li>
             </ul>
         </nav>
         <div class="main">
