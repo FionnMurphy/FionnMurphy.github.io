@@ -20,9 +20,9 @@
         <nav id="nav_bar">
             <ul class="menu_bar">
                 <li><a href="#" class="logo menu_item" onclick="toggle_menu();">Fionn Murphy</a></li>
-                <li><a href="#Contact" class="menu_item" onclick="toggle_menu();">Contact</a></li>
-                <li><a href="#CV" class="menu_item" onclick="toggle_menu();">CV</a></li>
-                <li><a href="#Projects" class="menu_item" onclick="toggle_menu();">Projects</a></li>
+                <li><a href="#Contact" class="ff menu_item" onclick="toggle_menu();">Contact</a></li>
+                <li><a href="#CV" class="ff menu_item" onclick="toggle_menu();">CV</a></li>
+                <li><a href="#Projects" class="ff menu_item" onclick="toggle_menu();">Projects</a></li>
             </ul>
         </nav>
         <div class="main">
@@ -81,5 +81,11 @@
             </div>
         </div>
     </body>
+    <footer>
+        <script>
+            var x = document.getElementById('nav_bar');
+            x.style.display = 'none';
+        </script>
+    </footer>
 </html>
 
