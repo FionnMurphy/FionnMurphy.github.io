@@ -19,6 +19,7 @@ nav{
 .menu_bar{
     list-style-type: none;
     width: 80%;
+    max-width: 820px;
     margin: auto;
     padding: 0;
 }
@@ -29,11 +30,13 @@ li{
 
 a{
     text-decoration: none;
-    transition: color .1s;
+    border-bottom: 4px solid #ffffff;
+    transition: color .1s, border-bottom .2s;
 }
 
 li a:hover{
-    color: #62f39c;
+    color: #7ec1f1;
+    border-bottom: 4px solid #7ec1f1;
 }
 
 li a:active{
@@ -56,6 +59,7 @@ li a:active{
 
 .main{
     width: 80%;
+    max-width: 820px;
     margin: auto;
     background-image: url("Computer_pic.svg");
     background-size: 50%;
@@ -104,12 +108,29 @@ li a:active{
     width: 100%;
     margin: 50px 0;
     color: #444040;
+    box-shadow: none;
+    transition: box-shadow .1s;
+}
+
+.projects_card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25), -10px -10px 20px rgba(255, 255, 255, 1);
 }
 
 .card_text{
     display: inline-block;
+    font-size: .85rem;
     width: 56%;
     padding: 1rem 2%;
+}
+
+h2{
+    display: inline-block;
+    color: #3699e0;
+    font-size: 1rem;
+}
+
+.projects_card:hover h2{
+    color: #7ec1f1;
 }
 
 .card_image{
@@ -126,7 +147,33 @@ li a:active{
 .right_image{
     border-radius: 0 20px 20px 0;
 }
- 
+
+.cv{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.cv iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact_card{
+    width: 80%;
+    padding: 10vw;
+}
+
+.contact_card a{
+    border: none;
+}
+
+.contact_card h2:hover{
+    color: #7ec1f1;
+}
+
 @media screen and (max-width: 1000px){
 
 }
