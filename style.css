@@ -197,6 +197,7 @@ h2{
     position: relative;
     width: 100%;
     padding-bottom: 100%;
+    z-index: -9;
 }
 
 .cv iframe{
@@ -291,6 +292,6 @@ h2{
         padding: 2vw;
     }
     .contact_card h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
