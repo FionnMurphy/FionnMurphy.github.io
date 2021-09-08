@@ -251,9 +251,9 @@ nav{
   
   transform-origin: 4px 0px;
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity .3s ease;
 }
 
 #menuToggle span:first-child
@@ -307,7 +307,7 @@ nav{
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
-    transition: opacity 1s;
+    transition: opacity .1s;
     pointer-events: none;
     margin: 0px;
     border: 0px;
