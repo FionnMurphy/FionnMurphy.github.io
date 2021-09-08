@@ -333,8 +333,22 @@ nav{
     transition: background-color .2s;
 }
 
+.social_media_image{
+    width: 60px;
+    margin: 40px;
+    color: blueviolet;
+    transition: width .1s, margin .1s;
+}
+
+.social_media_image:hover{
+    width: 80px;
+    margin: 30px;
+}
+
 iframe{
     margin-top: 2em;
+    display: block;
+    margin: auto;
 }
 
 .book_now_button{
