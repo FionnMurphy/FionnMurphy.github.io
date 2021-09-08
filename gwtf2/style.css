@@ -333,6 +333,18 @@ nav{
     transition: background-color .2s;
 }
 
+#contact_us{
+    color: #ffffff;
+}
+
+#contact_us a{
+    color: rgb(217, 253, 170);
+}
+
+#contact_us a:hover{
+    color: rgb(189, 234, 250);
+}
+
 .social_media_image{
     width: 60px;
     margin: 40px;
