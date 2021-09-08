@@ -423,4 +423,8 @@ iframe{
     .book_now_button{
         font-size: 4vw;
     }
+    iframe{
+        width: 100%;
+        height: 800px;
+    }
 }
