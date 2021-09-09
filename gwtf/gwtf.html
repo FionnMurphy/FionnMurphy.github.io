@@ -2,43 +2,90 @@
 <html>
     <head>
         <title>Go With The Flow</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="logic.js"></script>
     </head>
     <body>
-        <img src="images/Gwtf-Logo.png" class="banner">
+        <a href="gwtf.html"><img src="images/Gwtf-Logo.png" class="banner"/></a>
+        <div id="menuToggle">
+            <input type="checkbox" id="hamburger_menu" onclick="toggle_menu();"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a id="mobile_link" onclick="toggle_menu();" href="gwtf.html"><img src="images/Gwtf-Logo.png" class="banner"/></a>
+                <a id="mobile_link" onclick="toggle_menu();" href="#our_tours"><li class="mobile_li">View Our Tours</li></a>
+                <a id="mobile_link" onclick="toggle_menu();" href="#about_us"><li class="mobile_li">About Us</li></a>
+                <a id="mobile_link" onclick="toggle_menu();" href="#contact_us"><li class="mobile_li">Contact Us</li></a>
+            </ul>
+          </div>
             <nav>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href='#tt'>View Our Tours</a></li>
-                    <li>Contact Us</li>
+                <ul class="desktop_menu">
+                    <li class="desktop_li"><a href='#our_tours'>View Our Tours</a></li>
+                    <li class="desktop_li"><a href="#about_us">About Us</a></li>
+                    <li class="desktop_li"><a href='#contact_us'>Contact Us</a></li>
                 </ul>
             </nav>
         <div class="main">
-            <img src="images/pic1.jpg" class="splash_pic">
-            <div class="icon_area" id="tt">
+            <div class="splash_area splash_area_main">
+                <img src="images/pic5.jpg" class="splash_pic"/>
+                <div class="splash_text">Your River Adventure Awaites...<br/><span class="splash_min_text">Join over 50,000 happy customers and Go with the Flow!</span></div>
+            </div>
+            <div class="icon_area" id="our_tours">
                 <div class="heading">Our Tours</div>
-                <div class="icon">
+                <a href="spills_thrills.html" target="_blank"><div class="icon">
                     <img src="images/pic3.jpg" class="icon_image">
                     <div class="icon_text">
                     <span>Valley Of The Monks</span>
                         <div class="small_text">
-                            A relaxing self-guided trip<br/><a href="https://gowiththeflow.ie/high-kings-trail/" target="_blank" class="icon_link">view in detail -></a>
+                            A relaxing self-guided trip<br/><a href="spills_thrills.html" target="_blank" class="icon_link">view in detail -></a>
                         </div>
                     </div>
-                </div>
-                <div class="icon">
+                </div></a>
+                <a href="spills_thrills.html" target="_blank"><div class="icon">
                     <img src="images/pic2.jpg" class="icon_image">
                     <div class="icon_text">
                     <span>Spills And Thrills</span>
                         <div class="small_text">
-                            A guided whitewater adventure<br/><a href="https://gowiththeflow.ie/splash-n-dash/" target="_blank" class="icon_link">view in detail -></a>
+                            A guided whitewater adventure<br/><a href="spills_thrills.html" target="_blank" class="icon_link">view in detail -></a>
                         </div>
                     </div>
-                </div>
+                </div></a>
+                <a href="spills_thrills.html" target="_blank"><div class="icon">
+                    <img src="images/pic6.jpg" class="icon_image">
+                    <div class="icon_text">
+                    <span>Multi-day Canoe Hire</span>
+                        <div class="small_text">
+                            Hire canoes and spend 2-3 days paddling and camping along the River Barrow<br/><a href="spills_thrills.html" target="_blank" class="icon_link">view in detail -></a>
+                        </div>
+                    </div>
+                </div></a>
             </div>
+            <div class="text_area" id="about_us">
+                <div class="heading">About Us</div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam voluptatibus nisi architecto inventore numquam iure libero. Eius, accusamus vel blanditiis accusantium culpa modi nam aperiam quod quasi voluptatibus quibusdam.
+            </div>
+            <div class="text_area" id="contact_us">
+                <div class="heading">Contact Us</div>
+                Phone: <a href="tel:+353-000-000-0000">+353 000 000 0000</a><br/>
+                Email: <a href="mailto:support@gwtf.ie">support@gwtf.ie</a><br/>
+                <a href="https://www.facebook.com/GoWithTheFlowRiverAdventures/" class="social_media_link" target="_blank">
+                    <img class="social_media_image" src="images/facebook_logo.svg"/>
+                </a>
+                <a href="https://www.instagram.com/gowiththeflow.ie" class="social_media_link" target="_blank">
+                    <img class="social_media_image" src="images/instagram_logo.svg"/>
+                </a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.5380551545977!2d-6.917858719608747!3d52.55988034112395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ce4d2dae9a557%3A0x25be4f8aba98b547!2sGo%20With%20The%20Flow%20River%20Adventures!5e0!3m2!1sen!2sie!4v1630357479844!5m2!1sen!2sie" width="520" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <a href="https://fareharbor.com/embeds/book/gowiththeflow/?full-items=yes&amp;flow=269502&amp;u=9f3021cc-4577-4bb0-be0d-8745d4603f92&amp;from-ssl=yes&amp;back=https://gowiththeflow.ie/" class="book_now_button">Book Now</a>
         </div>
     </body>
+    <footer>
+    </footer>
 </html>
