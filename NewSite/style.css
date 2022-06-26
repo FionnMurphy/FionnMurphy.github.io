@@ -4,7 +4,7 @@ body{
     background-image: url("pics/XPattern.svg");
     background-size: 20px;
     background-color: #EBF2F3;
-    background-position: fixed;
+    background-attachment: fixed;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -15,6 +15,7 @@ a{
 }
 
 nav{
+    z-index: 2;
     position: sticky;
     top: 0;
     display: flex;
@@ -22,7 +23,7 @@ nav{
     justify-content: space-between;
     margin: 0;
     padding: 0.5rem 2rem;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     font-family: 'Playfair Display', serif;
 }
 
@@ -59,6 +60,10 @@ a:hover{
     color: #FF8761;
 }
 
+.SplashArea{
+    height: 80vh;
+}
+
 .IntroPanel{
     background-color: #37474e00;
     width: 100%;
@@ -85,32 +90,101 @@ a:hover{
     display: inline-block;
     margin: 0;
     width: 60%;
-    padding: 6rem 25% 6rem 6rem;
+    padding: min(6rem, 10vw);
+    padding-right: 25%;
     border-radius: 120px 0 0 120px;
     background-image: url("./pics/StripeTile.svg");
     background-size: 70px;
 }
 
 p{
-    line-height: 1.5rem;
+    line-height: min(1.5rem, 3vw);
     color: rgb(218, 218, 218);
+    font-size: min(1rem, 2vw);
 }
 
 h1{
     font-family: 'Playfair Display', serif;
     color: #FF8761;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: min(8rem, 9vw);
     margin: 0;
-    line-height: 8rem;
+    line-height: min(8rem, 9vw);
 }
 
 h3{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: min(1rem, 2vw);
     text-decoration: underline;
     color: #8ee0dc;
     margin: 0;
-    line-height: 1rem;
-    margin-bottom: 4rem;
+    line-height: min(2.5rem, 5vw);
+    margin-bottom: min(4rem, 5vw);
+}
+
+.ScrollPrompt{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    color: #FF8761;
+    animation-name: ScrollPrompt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes ScrollPrompt{
+    from{bottom: 100px;}
+    to{bottom: 120px;}
+}
+
+.ProjectArea{
+    background-color: #37474E;
+    padding: 2rem 5%;
+    border-radius: 120px;
+}
+
+.ProjectCardContainer{
+    background-color: #FF8761;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.ProjectCardContainer > div{
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.ProjectCardH{
+    height: 18vw;
+    background-color: rgb(127, 113, 189);
+    grid-column: auto / span 2;
+
+}
+
+.ProjectCardH > div{
+    width: 50%;
+    background-color: #2d5769;
+    height: 100%;
+}
+
+.ProjectCardV{
+    background-color: rgb(113, 189, 138);
+    grid-row: auto / span 2;
+}
+
+.ProjectCardV > div{
+    width: 100%;
+    background-color: #2d5769;
+    height: 50%;
 }

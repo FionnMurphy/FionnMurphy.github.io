@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Playfair+Display:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -28,21 +28,38 @@
             </li>
         </ul>
     </nav>
-    <div class="IntroPanel">
-        <div class="HeroPicContainer">
-            <img src="./pics/HeroPic.JPG" class="HeroPic"/>
+    <div class="SplashArea">
+        <div class="IntroPanel">
+            <div class="HeroPicContainer">
+                <img src="./pics/HeroPic.JPG" class="HeroPic"/>
+            </div>
+            <div class="IntroCard">
+                <p>
+                    Hello my name is...
+                    <h1>Fionn Murphy</h1>
+                    <h3>Computer Science Student</h3>
+                </p>
+                <p>
+                    I am a FullStack Web Developer in training,
+                    currently studying Computer Science at
+                    University College Dublin.
+                </p>
+            </div>
         </div>
-        <div class="IntroCard">
-            <p>
-                Hello my name is...<br/>
-                <h1>Fionn Murphy</h1><br/>
-                <h3>Computer Science Student</h3>
-            </p>
-            <p>
-                I am a FullStack Web Developer in training,
-                currently studying Computer Science at
-                University College Dublin.
-            </p>
+        <a href="#ProjectArea" class="ScrollPrompt">
+            Scroll For Projects
+            <div>&#8595;</div>
+        </a>
+    </div>
+    <div class="ProjectArea" id="ProjectArea">
+        <h1>Projects</h1>
+        <div class="ProjectCardContainer">
+            <div class="ProjectCardH"><div></div></div>
+            <div class="ProjectCardV"><div></div></div>
+            <div class="ProjectCardH"><div></div></div>
+            <div class="ProjectCardV"><div></div></div>
+            <div class="ProjectCardH"><div></div></div>
+            <div class="ProjectCardH"><div></div></div>
         </div>
     </div>
 </body>
