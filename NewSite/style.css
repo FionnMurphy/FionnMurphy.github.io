@@ -32,7 +32,12 @@ nav{
     font-weight: 900;
     text-decoration: none;
     font-size: 1.8rem;
+    color: #FF8761;
     align-self: center;
+}
+
+.HomeButton:hover{
+    color:rgb(113, 189, 138);
 }
 
 nav > ul{
@@ -63,13 +68,11 @@ a:hover{
 
 .SplashArea{
     height: 90vh;
-    background-color: #37474e81;
     display: flex;
     flex-direction: column;
 }
 
 .IntroPanel{
-    background-color: #37474ea6;
     width: 100%;
     padding: 0;
     margin: 80px 0 0 0;
@@ -86,7 +89,7 @@ a:hover{
 
 .HeroPic{
     border-radius: 50%;
-    width: 100%;
+    width: min(100%, 35vw);
     display: inline-block;
     box-shadow: -10px -10px 40px -10px rgba(0, 0, 0, 0.17);
 }
@@ -116,6 +119,7 @@ h1{
     font-size: min(8rem, 9vw);
     margin: 0;
     line-height: min(8rem, 9vw);
+    text-shadow: 0px 0px 50px #000000;
 }
 
 h3{
@@ -158,8 +162,11 @@ h3{
     border: 5px solid rgb(45, 46, 61);
 }
 
+.ProjectArea > h1{
+    margin-bottom: 4rem;
+}
+
 .ProjectCardContainer{
-    background-color: #FF8761;
     width: 100%;
     display: grid;
     grid-gap: 10px;
@@ -173,26 +180,80 @@ h3{
     text-align: center;
 }
 
+.ProjectImage{
+    background-size: cover;
+    background-position: center;
+    filter: opacity(50%);
+    transition: filter .3s ease;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    color: #FF8761;
+}
+
+.ProjectDescription{
+    box-sizing: border-box;
+    padding: 3rem;
+    text-align: left;
+    background-color: rgb(218, 218, 218);
+    filter: opacity(85%);
+    transition: filter .3s ease;
+    overflow-y: auto;
+}
+
+.ProjectCardContainer > div:hover .ProjectImage{
+    filter: opacity(100%);
+}
+
+.ProjectCardContainer > div:hover .ProjectDescription{
+    filter: opacity(100%);
+}
+
 .ProjectCardH{
+    display: flex;
     height: 18vw;
-    background-color: rgb(127, 113, 189);
+    background-color: rgb(0, 0, 0);
     grid-column: auto / span 2;
 
 }
 
-.ProjectCardH > div{
+.ProjectCardH > .ProjectImage{
     width: 50%;
-    background-color: #2d5769;
     height: 100%;
 }
 
 .ProjectCardV{
-    background-color: rgb(113, 189, 138);
+    background-color: rgb(0, 0, 0);
     grid-row: auto / span 2;
 }
 
-.ProjectCardV > div{
+.ProjectCardV > .ProjectImage{
     width: 100%;
-    background-color: #2d5769;
     height: 50%;
+}
+
+.GOL{
+    background-image: url("./pics/GameOfLifeImage.png");
+}
+
+.GWTF{
+    background-image: url("./pics/GWTFImage.png");
+}
+
+.OldSite{
+    background-image: url("./pics/OldWebsiteImage.png");
+}
+
+
+.ProjectCardH > .ProjectDescription{
+    height: 100%;
+    display: inline-block;
+    width: 50%;
+}
+
+.ProjectCardV > .ProjectDescription{
+    height: 50%;
+    display: block;
+    width: 100%;
 }
