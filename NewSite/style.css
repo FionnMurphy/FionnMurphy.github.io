@@ -219,6 +219,8 @@ h3{
 }
 
 .ProjectArea{
+    position: relative;
+    z-index: 1;
     background-color: #37474E;
     padding: 80px;
     border-radius: 120px;
@@ -363,6 +365,69 @@ h2{
     margin-top: 0.3rem;
 }
 
+.CVArea{
+    position: relative;
+    z-index: 0;
+    background-image: url("./pics/StripeTile.svg");
+    background-size: 5000px;
+    transform: translateY(-120px);
+    padding: 140px 80px;
+    border-bottom: 10px solid rgb(45, 46, 61);
+}
+
+.CVArea > h1{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.CV{
+    position: relative;
+    width: min(810px, 80%);
+    margin: auto;
+    padding-bottom: min(900px, 100%);
+    z-index: -9;
+}
+
+.CV iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: -1;
+}
+
+.DownloadLink{
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    color: #ffffff;
+    padding: .3rem;
+    background-color: #FF8761;
+    border: 2px solid #ffffff;
+    border-radius: .6rem;
+}
+
+.DownloadLink:hover{
+    color: #FF8761;
+    background-color: #ffffff;
+}
+
+.DownloadLink:active{
+    border-color: #FF8761;
+}
+
+.ContactArea{
+    color: #ffffff;
+    background-image: url("./pics/StripeTile.svg");
+    background-size: 20px;
+    border-top: 10px solid rgb(45, 46, 61);
+    padding: 80px;
+}
+
+.ContactArea > h1{
+    margin-bottom: 4rem;
+}
+
 @media screen and (max-width: 1000px) {
     nav{
         height: auto;
@@ -371,7 +436,7 @@ h2{
     }
     .Menu{
         position: absolute;
-        top: 6vh;
+        top: 2.8rem;
         left: 0;
         width: 100%;
         transform: translateX(150%);
@@ -457,5 +522,8 @@ h2{
         filter: opacity(95%);
         font-weight: 500;
         border-radius:  0 0 10px 10px;
+    }
+    .CV{
+        width: 100%;
     }
 }
