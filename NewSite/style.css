@@ -29,6 +29,7 @@ nav{
 }
 
 .HomeButton{
+    z-index: 2;
     font-weight: 900;
     text-decoration: none;
     font-size: 1.8rem;
@@ -87,7 +88,7 @@ a:hover{
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 2;
+    z-index: 3;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -348,6 +349,7 @@ h2{
 .TagContainer{
     display: flex;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .Tag{
@@ -358,9 +360,14 @@ h2{
     border: 1px solid #FF8761;
     padding: 0.1rem;
     margin-right: 0.2rem;
+    margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 1000px) {
+    nav{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .Menu{
         position: absolute;
         top: 6vh;
@@ -381,9 +388,13 @@ h2{
         margin: 0;
         display: block;
     }
+    .HomeButton{
+        text-align: start;
+        width: 100%;
+        transition: text-align .4s ease-in-out;
+    }
     .Checkbox:checked ~ .HomeButton{
-        margin: 0 0 0 50%;
-        transform: translate(-50%);
+        text-align: center;
     }
     .Checkbox:checked ~ .Menu{
         transform: translateX(0);
