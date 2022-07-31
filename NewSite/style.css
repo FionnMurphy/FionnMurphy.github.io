@@ -35,7 +35,7 @@ nav{
     font-size: 1.8rem;
     color: #FF8761;
     align-self: center;
-    transition: margin .4s ease-in-out, transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .HomeButton:hover{
@@ -389,12 +389,11 @@ h2{
         display: block;
     }
     .HomeButton{
-        text-align: start;
-        width: 100%;
-        transition: text-align .4s ease-in-out;
+        text-align: center;
+        width: 50%;
     }
     .Checkbox:checked ~ .HomeButton{
-        text-align: center;
+        transform: translateX(50%);
     }
     .Checkbox:checked ~ .Menu{
         transform: translateX(0);
