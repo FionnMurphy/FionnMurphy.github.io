@@ -35,7 +35,7 @@ nav{
     font-size: 1.8rem;
     color: #FF8761;
     align-self: center;
-    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, left .4s ease-in-out;
 }
 
 .HomeButton:hover{
@@ -365,8 +365,8 @@ h2{
 
 @media screen and (max-width: 1000px) {
     nav{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .Menu{
         position: absolute;
@@ -374,7 +374,7 @@ h2{
         left: 0;
         width: 100%;
         transform: translateX(150%);
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.4s ease-in-out;
         height: 20vh;
         padding: 6vh 0 6vh 0;
         display: flex;
@@ -389,11 +389,13 @@ h2{
         display: block;
     }
     .HomeButton{
+        position: absolute;
+        left: 10px;
         text-align: center;
-        width: 50%;
     }
     .Checkbox:checked ~ .HomeButton{
-        transform: translateX(50%);
+        left: 50%;
+        transform: translateX(-50%);
     }
     .Checkbox:checked ~ .Menu{
         transform: translateX(0);
