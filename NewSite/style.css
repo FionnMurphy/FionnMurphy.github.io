@@ -365,6 +365,7 @@ h2{
 
 @media screen and (max-width: 1000px) {
     nav{
+        height: auto;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -389,11 +390,11 @@ h2{
         display: block;
     }
     .HomeButton{
+        width: 50%;
         text-align: center;
     }
     .Checkbox:checked ~ .HomeButton{
-        margin: 0 0 0 50%;
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
     .Checkbox:checked ~ .Menu{
         transform: translateX(0);
