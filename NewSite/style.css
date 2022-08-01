@@ -394,7 +394,7 @@ h2{
 
 .CV{
     position: relative;
-    width: min(810px, 80%);
+    width: min(810px, 95%);
     margin: auto;
     padding-bottom: min(900px, 100%);
     z-index: -9;
@@ -534,6 +534,10 @@ h2{
         filter: opacity(95%);
         font-weight: 500;
         border-radius:  0 0 10px 10px;
+    }
+    .CVArea{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .CV{
         width: 100%;
