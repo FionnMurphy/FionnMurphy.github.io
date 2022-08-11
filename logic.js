@@ -1,23 +1,12 @@
-window.addEventListener('resize', checksize);
+function closeMenu(){
+    document.getElementsByClassName("Checkbox")[0].checked = false
+}
 
-function checksize(){
-    var x = document.getElementById('nav_bar');
-    if(window.innerWidth > 1000){  
-      x.style.display = 'flex';
-    }else if(x.style.display == 'block'){
-      x.style.display = 'block';
+const navBar = document.getElementsByTagName("nav")[0]
+window.addEventListener("scroll", () => {
+    if(window.scrollY === 0 && window.innerWidth >= 1000){
+        navBar.style.backgroundColor = "#00000000"
     }else{
-      x.style.display = 'none';
-    };
-};
-
-function toggle_menu(){
-  if(window.innerWidth <= 1000){
-    var x = document.getElementById('nav_bar');
-    if (x.style.display == 'none'){
-      x.style.display = 'block';
-    }else{
-      x.style.display = 'none';
-    };
-  };
-};
+        navBar.style.backgroundColor = "#ffffff"
+    }
+})
