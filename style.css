@@ -334,6 +334,10 @@ h2{
     border-radius: 10px 10px 0 0;
 }
 
+.HC{
+    background-image: url("./pics/HowClose.png");
+}
+
 .GOL{
     background-image: url("./pics/GameOfLifeImage.png");
 }
