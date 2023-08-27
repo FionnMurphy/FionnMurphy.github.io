@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projects/dotaMatchups/static/css/main.ada7df00.css",
+    "main.js": "/projects/dotaMatchups/static/js/main.efa5e1a8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/projects/dotaMatchups/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/projects/dotaMatchups/index.html",
+    "main.ada7df00.css.map": "/projects/dotaMatchups/static/css/main.ada7df00.css.map",
+    "main.efa5e1a8.js.map": "/projects/dotaMatchups/static/js/main.efa5e1a8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/projects/dotaMatchups/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ada7df00.css",
+    "static/js/main.efa5e1a8.js"
+  ]
+}
