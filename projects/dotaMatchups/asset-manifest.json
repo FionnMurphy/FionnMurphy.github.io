@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/projects/dotaMatchups/static/css/main.ada7df00.css",
-    "main.js": "/projects/dotaMatchups/static/js/main.efa5e1a8.js",
+    "main.css": "/projects/dotaMatchups/static/css/main.45a10bae.css",
+    "main.js": "/projects/dotaMatchups/static/js/main.973af6a5.js",
     "static/js/787.28cb0dcd.chunk.js": "/projects/dotaMatchups/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/projects/dotaMatchups/index.html",
-    "main.ada7df00.css.map": "/projects/dotaMatchups/static/css/main.ada7df00.css.map",
-    "main.efa5e1a8.js.map": "/projects/dotaMatchups/static/js/main.efa5e1a8.js.map",
+    "main.45a10bae.css.map": "/projects/dotaMatchups/static/css/main.45a10bae.css.map",
+    "main.973af6a5.js.map": "/projects/dotaMatchups/static/js/main.973af6a5.js.map",
     "787.28cb0dcd.chunk.js.map": "/projects/dotaMatchups/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ada7df00.css",
-    "static/js/main.efa5e1a8.js"
+    "static/css/main.45a10bae.css",
+    "static/js/main.973af6a5.js"
   ]
 }
